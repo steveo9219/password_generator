@@ -18,11 +18,13 @@ button.addEventListener("click", function () {
   let passNumber = prompt(
     "How many characters would you like in your password?"
   ); //asking for number of characters in your password
+
   var empty = [];
 
   if (confirmUpperCase) {
     var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWZYZ";
   } else var upperCase = empty;
+  //
 
   if (confirmLowerCase) {
     var lowerCase = "abcdefghijklmnopqrstuvwxyz";
@@ -45,7 +47,6 @@ button.addEventListener("click", function () {
         Math.floor(Math.random() * Math.floor(passCode.length - 1))
       );
   }
-  var empty = {};
 
   document.getElementById("display").value = allPasswordLetters;
 });
