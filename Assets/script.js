@@ -22,21 +22,15 @@ button.addEventListener("click", function () {
 
   if (confirmUpperCase) {
     var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWZYZ";
-  } else confirmUpperCase;
-  var upperCase = empty;
-
-  var empty = [];
+  } else var upperCase = empty;
 
   if (confirmLowerCase) {
     var lowerCase = "abcdefghijklmnopqrstuvwxyz";
-  } else confirmLowerCase;
-  var upperCase = empty;
-
-  var empty = [];
+  } else var lowerCase = empty;
 
   if (confirmSpecialCase) {
     var specialCase = "1234567890!@#$%^&*()_+";
-  } else confirmSpecialCase;
+  } else var specialCase = empty;
 
   var passCode = upperCase + lowerCase + specialCase;
 
