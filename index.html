@@ -12,25 +12,30 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./Assets/style.css" />
-    
   </head>
   <body>
-      <div class="container">
-    <h1>Password Generator</h1>
-    <main class="jumbotron">
-      <p class="lead">
-        Generate a Password
-      </p>
-      <hr class="my-4" />
-      <div class="content">
-        <input type="text" id="display" placeholder="Your secure password will appear here when ready! Press Generate Password" />
-      </div>
-      <hr class="my-4" />
-      <div class="row-lg-12">
-      <button id="generate" class="btn btn-danger">Generate Password</button>
-    </div>
+    <main class="container">
+      <h1>Password Generator</h1>
+      <section class="jumbotron">
+        <p class="lead">
+          Generate a Password
+        </p>
+        <hr class="my-4" />
+        <article class="content">
+          <input
+            type="text"
+            id="display"
+            placeholder="Your secure password will appear here when ready! Press Generate Password"
+          />
+        </article>
+        <hr class="my-4" />
+        <article class="row-lg-12">
+          <button id="generate" class="btn btn-danger">
+            Generate Password
+          </button>
+        </article>
+      </section>
+      <script src="./Assets/script.js"></script>
     </main>
-    <script src="./Assets/script.js">
-    </script>
   </body>
 </html>
