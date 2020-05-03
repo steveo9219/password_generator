@@ -1,10 +1,10 @@
 var button = document.getElementById("generate");
 
 button.addEventListener("click", function () {
-  console.log("button");
+  console.log("functioncheck");
 
   let confirmUpperCase = confirm(
-    "Would you like uppercase letters in your password?"
+    "Would you like UPPERCASE letters in your password?"
   ); // true or false
 
   let confirmLowerCase = confirm(
@@ -12,19 +12,24 @@ button.addEventListener("click", function () {
   ); // true or false
 
   let confirmSpecialCase = confirm(
-    "Would you like special letters and numbers in your password?"
+    "Would you like $PECI@L letter$ and NUM8ER5 in your password?"
   ); // true or false
 
   let passNumber = prompt(
-    "How many characters would you like in your password?"
+    "How MANY characters would you like in your password? *Please select a number between 8-128*"
   ); //asking for number of characters in your password
+
+  if (passNumber < 8 || passNumber > 128 || isNaN(passNumber)) {
+    alert(
+      "Your selections didn't meet the minimum requirements for a secure password!"
+    );
+  }
 
   var empty = [];
 
   if (confirmUpperCase) {
     var upperCase = "ABCDEFGHIJKLMNOPQRSTUVWZYZ";
   } else var upperCase = empty;
-  //
 
   if (confirmLowerCase) {
     var lowerCase = "abcdefghijklmnopqrstuvwxyz";
@@ -47,6 +52,8 @@ button.addEventListener("click", function () {
         Math.floor(Math.random() * Math.floor(passCode.length - 1))
       );
   }
-
-  document.getElementById("display").value = allPasswordLetters;
+  if (passNumber < 8 || passNumber > 128 || isNaN(passNumber)) {
+    document.getElementById("display").value =
+      "Sorry, Your selections didn't meet the minimum requirements for a secure password. Please try again!";
+  } else document.getElementById("display").value = allPasswordLetters;
 });
