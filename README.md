@@ -16,3 +16,5 @@ a letter in the box;
 github repo: https://github.com/steveo9219/password_generator
 
 github pages: https://steveo9219.github.io/password_generator/
+
+Screenshot of the index.html https://drive.google.com/file/d/1gYgFkyu0xIjLHGV7iUBO09negF-AVcia/view?usp=sharing
